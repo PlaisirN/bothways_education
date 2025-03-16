@@ -1,9 +1,9 @@
 <template>
-  <nav class="bg-[#F4F2F2] shadow-md p-4 w-full">
-    <div class="container mx-auto flex justify-between items-center">
+  <header class="mx-auto bg-[#F4F2F2] shadow-md p-4 fixed top-10 left-1/2 transform -translate-x-1/2 rounded-full w-[95%] z-9999">
+    <nav class="container mx-auto flex justify-between items-center">
       <!-- Logo -->
       <NuxtLink to="/" class="flex items-center">
-        <img src="/img/logo-no-background.svg" alt="Logo" class="h-16 w-auto" />
+        <img src="/img/logo-no-background.svg" alt="Logo" class="h-10 md:h-16 w-auto" />
       </NuxtLink>
 
       <!-- Hamburger Menu Button -->
@@ -14,7 +14,7 @@
       </button>
 
       <!-- Navigation Links -->
-      <div :class="{'hidden': !isOpen, 'block': isOpen}" class="absolute lg:static top-16 left-0 w-full bg-[#F4F2F2] lg:w-auto lg:flex lg:items-center lg:space-x-6 p-4 lg:p-0 shadow-lg lg:shadow-none">
+      <div :class="{'hidden': !isOpen, 'block': isOpen}" class="absolute lg:static top-16 left-0 w-full lg:w-auto lg:flex lg:items-center lg:space-x-6 p-4 lg:p-0 shadow-lg lg:shadow-none">
         <NuxtLink to="/over-ons" class="block lg:inline-block text-gray-700 hover:text-gray-900 px-4 py-2">Over Ons</NuxtLink>
 
         <!-- Dropdown Menu -->
@@ -30,8 +30,8 @@
 
         <NuxtLink to="/contact" class="block lg:inline-block text-gray-700 hover:text-gray-900 px-4 py-2">Contact</NuxtLink>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 </template>
 
 <script setup>

@@ -1,6 +1,6 @@
 <template>
   <!--Footer-->
-  <footer class="bg-[#F4F2F2]">
+  <footer class="bg-[#F4F2F2] sticky bottom-0 left-0 w-full z-1">
     <div class="container mx-auto border-t-1  px-8">
       <div class="w-full flex flex-col md:flex-row py-6">
         <div class="flex-1 mb-6 text-black">
