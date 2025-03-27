@@ -49,21 +49,14 @@
         <Carousel :items="slides" />
       </div>
       <!-- Call to Action -->
-      <div class="flex flex-col items-center text-center p-8">
-        <h2 class="text-2xl font-semibold mb-4">Klaar om te beginnen?</h2>
-        <p class="max-w-2xl mb-4">
-          Neem contact met ons op en ontdek hoe wij kunnen helpen bij het succes en de persoonlijke groei van uw kind.
-        </p>
-        <NuxtLink to="/contact" class="px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow hover:bg-gray-200">
-          Neem contact op
-        </NuxtLink>
-      </div>
+      <CallToAction />
     </section>
   </div>
 </template>
 
 <script setup lang="ts">
 import Carousel from '@/components/Carousel.vue'
+import CallToAction from "~/components/CallToAction.vue";
 
 const slides = [
   {

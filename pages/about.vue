@@ -39,13 +39,13 @@ definePageMeta({
           hoofdgebieden:
         </p>
       </div>
-      <div class="bg-white md:w-4/6 flex justify-center self-center items-center mx-auto rounded-xl gap-8 mb-20">
+      <div class="bg-white md:w-4/6 flex justify-center self-center items-center mx-auto rounded-xl gap-8 p-8 mb-20">
         <div class="md:w-1/2">
-          <img src="/img/content/writing-hand.jpg" alt="Individuele begeleiding" class="w-full shadow-lg rounded-tl-xl rounded-bl-xl" />
+          <img src="/img/content/writing-hand.jpg" alt="Individuele begeleiding" class="w-full shadow-lg rounded-xl" />
         </div>
         <div class="flex flex-col md:w-1/2 pe-8">
           <div>
-            <h4 class="text-md rounded-xl">Academische Ondersteuning</h4>
+            <h4 class="text-lg">Academische Ondersteuning</h4>
             <p class="text-gray-700 mb-5">
               We helpen studenten bij het begrijpen van de lesstof, het verbeteren van
               hun studievaardigheden en het behalen van hogere cijfers. Onze docenten zijn experts in hun
@@ -53,7 +53,7 @@ definePageMeta({
             </p>
           </div>
           <div>
-            <h4 class="text-md">Persoonlijke Ontwikkeling</h4>
+            <h4 class="text-lg">Persoonlijke Ontwikkeling</h4>
             <p class="text-gray-700 mb-5">
               Wij geloven dat zelfvertrouwen de basis is voor succes, zowel binnen als
               buiten het klaslokaal. Daarom integreren we oefeningen en methoden die gericht zijn op het versterken
@@ -62,17 +62,49 @@ definePageMeta({
             </p>
           </div>
         </div>
-<!--        <div>-->
-<!--          <p class="text-gray-700 mb-5">-->
-<!--            Onze unieke tweevoudige benadering zorgt ervoor dat studenten niet alleen academisch vooruitgang boeken,-->
-<!--            maar ook groeien als individu. Dit leidt tot een holistische ontwikkeling waarbij zowel schoolprestaties als-->
-<!--            persoonlijke groei centraal staan.-->
-<!--            Bij BothWays Education zijn we er trots op dat we een verschil kunnen maken in het leven van onze studenten.-->
-<!--            Ons toegewijde team van docenten en mentoren werkt nauw samen met elke student om ervoor te zorgen dat-->
-<!--            ze de ondersteuning en aanmoediging krijgen die ze nodig hebben om te slagen.-->
-<!--          </p>-->
-<!--        </div>-->
       </div>
+    </section>
+    <section id="mission_vision" class="w-full p-8 bg-[#AEC2E3]">
+      <h1 class="text-7xl font semibold mt-10 mb-10 text-center text-white">Waar doen wij het voor?</h1>
+      <h4 class="text-2xl text-center">Missie en Visie</h4>
+      <div class="flex justify-center align-center md:gap-20 mt-20">
+        <div class="md:w-2/6 p-8 bg-white rounded-xl shadow-2xl">
+          <img src="/img/content/idea_vector_comp.jpg" alt="BothWays Education Mission" title="BothWays Education Mission">
+          <div>
+            <h5 class="text-xl font-semibold text-blue-600 mb-3">Missie</h5>
+            <p>
+              Bij BothWays Education is het onze missie om studenten te helpen hun volledige potentieel te bereiken door
+              middel van een unieke combinatie van academische ondersteuning en persoonlijke ontwikkeling.
+              <br><br>
+              We streven ernaar om elke student te voorzien van op maat gemaakte begeleiding die hen niet alleen helpt hun
+              schooldoelen te behalen, maar ook hun zelfvertrouwen en persoonlijke vaardigheden te versterken.
+              <br><br>
+              Door positieve versterking en individuele aandacht willen wij bijdragen aan een succesvolle en gebalanceerde
+              schoolcarrière voor elke leerling.
+            </p>
+          </div>
+        </div>
+        <div class="md:w-2/6 p-8 bg-white rounded-xl shadow-2xl">
+          <img src="/img/content/idea_2_vector_comp.jpg" alt="BothWays Education Vision" title="BothWays Education Vision">
+          <div class="">
+            <h5 class="text-xl font-semibold text-blue-600 mb-3">Visie</h5>
+            <p>
+              Onze visie is een onderwijsomgeving waarin elke student de kans krijgt om zowel academisch als persoonlijk te
+              groeien. Wij geloven dat de sleutel tot duurzaam succes ligt in het ontwikkelen van zelfvertrouwen en
+              eigenwaarde, naast het behalen van academische doelen.
+              <br><br>
+              Daarom zien wij een toekomst waarin BothWays Education een toonaangevende rol speelt in het aanbieden van holistische bijles- en begeleidingsprogramma's
+              die studenten voorbereiden op de uitdagingen van zowel het heden als de toekomst.
+              <br><br>
+              Wij streven ernaar om een omgeving te creëren waarin leren leuk, motiverend en zelfversterkend is, waardoor studenten niet alleen
+              academisch uitblinken, maar ook als zelfverzekerde en veerkrachtige individuen.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-white">
+      <CallToAction buttonColor="bg-blue-600" textColor="text-white"/>
     </section>
   </div>
 </template>
