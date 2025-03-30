@@ -21,7 +21,11 @@
         </div>
       </div>
       <div>
-        <h1 class="text-center text-6xl">Twee Wegen naar Succes: <span class="text-blue-500">Academisch en Persoonlijk</span></h1>
+        <h1 class="text-center text-6xl">
+          Twee Wegen naar Succes:
+          <br>
+          <span class="text-blue-500">Academisch en Persoonlijk</span>
+        </h1>
       </div>
       <!-- About Section -->
       <div class="md:flex justify-center items-center my-50 p-8">
