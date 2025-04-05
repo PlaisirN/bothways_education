@@ -54,8 +54,29 @@
 
 <script setup>
 useHead({
-  title: 'Contact',
-});
+  title: 'Contacteer ons',
+  meta: [
+    {
+      name: 'Contacteer ons - BothWays Education',
+      content: 'Twee Wegen naar Succes: Academisch en Persoonlijk',
+    },
+    { name: 'robots', content: 'index, follow' },
+    { property: 'og:title', content: 'BothWays Education' },
+    { property: 'og:description', content: 'Contacteer ons - BothWays Education' },
+  ],
+  titleTemplate: (titleChunk) => {
+    return titleChunk ? `${titleChunk} - BothWays Education` : 'BothWays Education';
+  }
+})
+
+useSeoMeta({
+  title: 'Contact - BothWays Education',
+  ogTitle: 'Contact - BothWays Education',
+  description: 'Wij staan altijd klaar om uw vragen te beantwoorden en u te helpen met meer informatie over onze diensten.\n' +
+      'Daarom horen wij graag van u!',
+  ogDescription: 'Wij staan altijd klaar om uw vragen te beantwoorden en u te helpen met meer informatie over onze diensten.\n' +
+      'Daarom horen wij graag van u!',
+})
 </script>
 
 <style scoped>

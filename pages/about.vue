@@ -1,7 +1,33 @@
 <script setup>
 definePageMeta({
+  title: 'Over Ons',
   path: "/over-ons"
 });
+
+useHead({
+  title: 'Welkom bij BothWays Education',
+  meta: [
+    {
+      name: 'BothWays Education - Twee Wegen naar Succes: Academisch en Persoonlijk',
+      content: 'Twee Wegen naar Succes: Academisch en Persoonlijk',
+    },
+    { name: 'robots', content: 'index, follow' },
+    { property: 'og:title', content: 'BothWays Education' },
+    { property: 'og:description', content: 'BothWays Education - Twee Wegen naar Succes: Academisch en Persoonlijk' },
+  ],
+  titleTemplate: (titleChunk) => {
+    return titleChunk ? `${titleChunk} - BothWays Education` : 'BothWays Education';
+  }
+})
+
+useSeoMeta({
+  title: 'Over Ons - BothWays Education',
+  ogTitle: 'Over Ons - BothWays Education',
+  description: '            BothWays Education werd opgericht met een heldere visie: het bieden van hoogwaardige bijles en\n' +
+      '            huiswerkbegeleiding die verder gaat dan alleen academische ondersteuning.',
+  ogDescription: '            BothWays Education werd opgericht met een heldere visie: het bieden van hoogwaardige bijles en\n' +
+      '            huiswerkbegeleiding die verder gaat dan alleen academische ondersteuning.',
+})
 </script>
 
 <template>
@@ -82,8 +108,8 @@ definePageMeta({
     </section>
     <section id="mission_vision" class="w-full p-8 bg-[#AEC2E3]">
       <h1 class="text-4xl md:text-7xl font semibold mt-10 mb-10 text-center text-white">Waar doen wij het voor?</h1>
-      <h4 class="text-2xl text-center mb-20 md:mb-0">Missie en Visie</h4>
-      <div class="md:flex justify-center align-center md:gap-20 my-30">
+      <h4 class="text-2xl text-center mb-20">Missie en Visie</h4>
+      <div class="md:flex justify-center align-center md:gap-20 my-32">
         <div class="md:w-2/6 p-8 bg-white rounded-xl shadow-2xl mb-10 md:mb-0">
           <img src="/img/content/idea_vector_comp.jpg" alt="BothWays Education Mission" title="BothWays Education Mission">
           <div>
@@ -236,7 +262,7 @@ definePageMeta({
                 Bekijk onze producten en diensten!
               </p>
               <NuxtLink
-                  to="/contact"
+                  to="/producten-en-diensten"
                   class="px-6 py-3 text-blue-600 font-semibold rounded-lg shadow hover:bg-gray-200"
               >
                 Producten en Diensten

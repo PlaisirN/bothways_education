@@ -2,30 +2,6 @@
   <div class="min-h-screen relative z-2 bg-white">
     <section class="min-h-screen bg-lightBlue p-8 mx-auto">
       <!-- Hero Section -->
-<!--      <div class="min-h-screen md:flex py-20 justify-center md:justify-around items-center">-->
-<!--        <div class="md:w-2/5 mb-20 mt-20 md:mt-0 md:mb-0">-->
-<!--          <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-4 leading-tight">-->
-<!--            Welkom bij <br />-->
-<!--            <span class="text-blue-600">BothWays Education!</span>-->
-<!--          </h1>-->
-<!--          <p class="text-lg text-gray-700 max-w-2xl mb-6">-->
-<!--            Bij BothWays Education geloven wij dat de sleutel tot een succesvolle schoolcarrière ligt in een combinatie van-->
-<!--            academische prestaties en persoonlijke groei.-->
-<!--          </p>-->
-<!--          <NuxtLink to="#" class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700">-->
-<!--            Ontdek Hoe-->
-<!--          </NuxtLink>-->
-<!--        </div>-->
-<!--        <div class="w-full md:w-2/5">-->
-<!--          <div class="w-80 h-80 md:w-2/5 md:h-auto mx-auto">-->
-<!--            <img-->
-<!--                src="/img/content/stack_of_books.jpg"-->
-<!--                alt="Education"-->
-<!--                class="w-full h-full mx-auto max-w-lg rounded-full md:rounded-br-lg md:rounded-bl-lg md:rounded-t-full shadow-xl"-->
-<!--            />-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
       <div class="pt-44 pb-14 md:pt-10 md:pb-10 md:flex justify-center items-center">
         <div class="md:w-4/5 md:flex justify-between items-center gap-10 md:my-32">
           <div class="md:w-1/2 mb-14 md:mb-0">
@@ -51,7 +27,7 @@
             </div>
           </div>
           <div class="md:w-1/2">
-            <img class="md:w-5/6 rounded-full mx-auto" src="/img/content/doelgroep_5.jpg" alt="Image from Freepik.com">
+            <img class="md:w-5/6 rounded-full mx-auto" src="/img/content/together.jpg" alt="Image from Freepik.com">
           </div>
         </div>
       </div>
@@ -107,13 +83,13 @@ const slides = [
     description: 'BothWays Education heeft Joris geholpen zijn zelfvertrouwen terug te vinden. Hij heeft nu een positieve\n' +
         'houding ten opzichte van school en is veel gemotiveerder. We zijn zeer tevreden met de resultaten en de\n' +
         'persoonlijke aandacht die hij heeft gekregen.',
-    image: 'notebook-pencil.jpg'
+    image: 'avatar_man.jpg'
   },
   {
     title: 'Jesaja',
     description: '"De bijlessen bij BothWays Education hebben mij niet alleen geholpen om mijn cijfers te verbeteren, maar ook\n' +
         'om zelfverzekerder te worden. Ik voelde me altijd gesteund en begrepen. Dank jullie wel!',
-    image: 'think-cloud.jpg'
+    image: 'avatar_man_4.jpg'
   },
   {
     title: 'Ouders van Sophie',
@@ -121,24 +97,24 @@ const slides = [
         'hebben dat gevonden bij BothWays Education. Sophie heeft niet alleen haar cijfers verbeterd, maar ook\n' +
         'belangrijke levensvaardigheden geleerd die haar op de lange termijn zullen helpen. We raden BothWays\n' +
         'Education ten zeerste aan',
-    image: 'writing-hand.jpg'
+    image: 'avatar_woman.jpg'
   },
   {
     title: 'Danny\'s moeder',
     description: 'Dankzij BothWays Education heeft Lisa niet alleen haar cijfers verbeterd, maar ook haar zelfvertrouwen herwonnen. Ze is een ander kind geworden!',
-    image: 'main_bg.jpg'
+    image: 'avatar_woman_2.jpg'
   },
   {
     title: 'Mark\'s vader',
     description: 'Mark kijkt nu uit naar zijn schooldagen en voelt zich trots op wat hij kan bereiken. We zijn ontzettend dankbaar ' +
         'voor de hulp van BothWays Education',
-    image: 'book_vector.png'
+    image: 'avatar_man_3.jpg'
   },
   {
     title: 'Ivy',
     description: 'De bijlessen bij BothWays Education hebben mij niet alleen geholpen om mijn cijfers te verbeteren, maar ook ' +
         'om zelfverzekerder te worden. Ik voelde me altijd gesteund en begrepen. Dank jullie wel!',
-    image: 'writing-hand.jpg'
+    image: 'avatar_woman_3.jpg'
   },
 ]
 </script>

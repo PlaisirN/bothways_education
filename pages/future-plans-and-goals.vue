@@ -1,7 +1,33 @@
 <script setup lang="ts">
 definePageMeta({
+  title: 'Toekomstige plannen en doelen',
   path: "/toekomstige-doelen-en-plannen"
 });
+
+useHead({
+  title: 'Welkom bij BothWays Education',
+  meta: [
+    {
+      name: 'BothWays Education - Twee Wegen naar Succes: Academisch en Persoonlijk',
+      content: 'Twee Wegen naar Succes: Academisch en Persoonlijk',
+    },
+    { name: 'robots', content: 'index, follow' },
+    { property: 'og:title', content: 'BothWays Education' },
+    { property: 'og:description', content: 'BothWays Education - Twee Wegen naar Succes: Academisch en Persoonlijk' },
+  ],
+  titleTemplate: (titleChunk) => {
+    return titleChunk ? `${titleChunk} - BothWays Education` : 'BothWays Education';
+  }
+})
+
+useSeoMeta({
+  title: 'Toekomstige plannen en doelen - BothWays Education',
+  ogTitle: 'Toekomstige plannen en doelen - BothWays Education',
+  description: 'Bij BothWays Education streven we ernaar om onze diensten voortdurend te verbeteren en uit te breiden, zodat' +
+  'we nog meer studenten kunnen helpen bij hun academische en persoonlijke groei.',
+  ogDescription: 'Bij BothWays Education streven we ernaar om onze diensten voortdurend te verbeteren en uit te breiden, zodat' +
+      'we nog meer studenten kunnen helpen bij hun academische en persoonlijke groei.',
+})
 </script>
 
 <template>

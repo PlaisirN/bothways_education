@@ -12,6 +12,31 @@ const showFooter = computed(() => {
   // Replace 'page-to-hide-footer' with the actual path or name of the page
   return route.path !== '/contact';
 });
+
+useHead({
+  title: 'Welkom bij BothWays Education',
+  meta: [
+    {
+      name: 'BothWays Education - Twee Wegen naar Succes: Academisch en Persoonlijk',
+      content: 'Twee Wegen naar Succes: Academisch en Persoonlijk',
+    },
+    { name: 'robots', content: 'index, follow' },
+    { property: 'og:title', content: 'BothWays Education' },
+    { property: 'og:description', content: 'BothWays Education - Twee Wegen naar Succes: Academisch en Persoonlijk' },
+  ],
+  titleTemplate: (titleChunk) => {
+    return titleChunk ? `${titleChunk} - BothWays Education` : 'BothWays Education';
+  }
+})
+
+useSeoMeta({
+  title: 'BothWays Education',
+  ogTitle: 'BothWays Education',
+  description: 'BothWays Education - Twee Wegen naar Succes: Academisch en Persoonlijk',
+  ogDescription: 'BothWays Education - Twee Wegen naar Succes: Academisch en Persoonlijk',
+  ogImage: 'https://example.com/image.png',
+  twitterCard: 'summary_large_image',
+})
 </script>
 
 <template>

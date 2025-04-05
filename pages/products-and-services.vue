@@ -51,9 +51,9 @@ definePageMeta({
             wiskunde, natuurwetenschappen, talen en sociale wetenschappen.
             Benieuwd voor wie?
           </p>
-          <button class="bg-softGold text-white font-semibold px-6 py-3 rounded-xl shadow hover:bg-vibrantOrange transition">
+          <NuxtLink to="/marktpositie-en-doelgroep" class="bg-softGold text-white font-semibold px-6 py-3 rounded-xl shadow hover:bg-vibrantOrange transition">
             Bekijk onze doelgroepen
-          </button>
+          </NuxtLink>
         </div>
         <div class="bg-softGold opacity-90 rounded-xl shadow-xl p-4">
           <img class="rounded-xl" src="/img/content/education_img.jpg" alt="Picture from Pexels.com">
@@ -70,9 +70,9 @@ definePageMeta({
           <p class="text-gray-600 mb-8">
             Wij begrijpen dat huiswerk een uitdaging kan zijn voor veel studenten...
           </p>
-          <button class="bg-softGold text-white font-semibold px-6 py-3 rounded-xl shadow hover:bg-vibrantOrange transition">
+          <NuxtLink to="/marktpositie-en-doelgroep" class="bg-softGold text-white font-semibold px-6 py-3 rounded-xl shadow hover:bg-vibrantOrange transition">
             Bekijk onze doelgroepen
-          </button>
+          </NuxtLink>
         </div>
         <div class="order-2 md:order-1 bg-warmGrey opacity-90 rounded-xl shadow-xl p-4">
           <img class="rounded-xl" src="/img/content/education_img_2.jpg" alt="Picture from Pexels.com">
@@ -92,9 +92,9 @@ definePageMeta({
             op te bouwen en strategieën te leren voor het succesvol afleggen van examens. We bieden zowel individuele
             als groepssessies, afhankelijk van de voorkeur van de student.
           </p>
-          <button class="bg-softGold text-white font-semibold px-6 py-3 rounded-xl shadow hover:bg-vibrantOrange transition">
+          <NuxtLink to="/marktpositie-en-doelgroep" class="bg-softGold text-white font-semibold px-6 py-3 rounded-xl shadow hover:bg-vibrantOrange transition">
             Bekijk onze doelgroepen
-          </button>
+          </NuxtLink>
         </div>
         <div class="bg-softGold opacity-90 rounded-xl shadow-xl p-4">
           <img class="rounded-xl" src="/img/content/education_img_3.jpg" alt="Picture from Pexels.com">
@@ -114,9 +114,9 @@ definePageMeta({
             onze bijlessen en begeleiding. Studenten leren vaardigheden zoals time management, stressmanagement, en
             effectieve communicatie, die hen helpen zowel in hun studie als in het dagelijks leven.
           </p>
-          <button class="bg-softGold text-white font-semibold px-6 py-3 rounded-xl shadow hover:bg-vibrantOrange transition">
+          <NuxtLink to="/marktpositie-en-doelgroep" class="bg-softGold text-white font-semibold px-6 py-3 rounded-xl shadow hover:bg-vibrantOrange transition">
             Bekijk onze doelgroepen
-          </button>
+          </NuxtLink>
         </div>
         <div class="order-2 md:order-1 bg-warmGrey opacity-90 rounded-xl shadow-xl p-4">
           <img class="rounded-xl" src="/img/content/education_img_4.jpg" alt="Picture from Pexels.com">
@@ -136,9 +136,9 @@ definePageMeta({
             plannen en organiseren, en motivatiebehoud. Deze workshops zijn interactief en praktisch, met veel ruimte voor
             oefening en feedback.
           </p>
-          <button class="bg-softGold text-white font-semibold px-6 py-3 rounded-xl shadow hover:bg-vibrantOrange transition">
+          <NuxtLink to="/marktpositie-en-doelgroep" class="bg-softGold text-white font-semibold px-6 py-3 rounded-xl shadow hover:bg-vibrantOrange transition">
             Bekijk onze doelgroepen
-          </button>
+          </NuxtLink>
         </div>
         <div class="bg-softGold opacity-90 rounded-xl shadow-xl p-4">
           <img class="rounded-xl" src="/img/content/education_img_5.jpg" alt="Picture from Pexels.com">
@@ -158,9 +158,9 @@ definePageMeta({
             vooruitgang van hun kind, de doelen die zijn gesteld en de stappen die worden ondernomen om deze doelen te
             bereiken.
           </p>
-          <button class="bg-softGold text-white font-semibold px-6 py-3 rounded-xl shadow hover:bg-vibrantOrange transition">
+          <NuxtLink to="/marktpositie-en-doelgroep" class="bg-softGold text-white font-semibold px-6 py-3 rounded-xl shadow hover:bg-vibrantOrange transition">
             Bekijk onze doelgroepen
-          </button>
+          </NuxtLink>
         </div>
         <div class="order-2 md:order-1 bg-warmGrey opacity-90 rounded-xl shadow-xl p-4">
           <img class="rounded-xl" src="/img/content/education_img_6.jpg" alt="Picture from Pexels.com">

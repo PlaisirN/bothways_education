@@ -65,9 +65,9 @@ definePageMeta({
             basisvakken zoals rekenen, taal en begrijpend lezen. Onze doelgerichte aanpak helpt hen een sterke basis te
             leggen voor hun verdere schoolcarrière.
           </p>
-          <button class="bg-royalBlue text-white font-semibold px-6 py-3 rounded-xl shadow hover:bg-vibrantOrange transition">
-            Bekijk onze doelgroepen
-          </button>
+          <NuxtLink to="/producten-en-diensten" class="bg-royalBlue text-white font-semibold px-6 py-3 rounded-xl shadow hover:bg-vibrantOrange transition">
+            Producten en diensten
+          </NuxtLink>
         </div>
         <div class="bg-white opacity-90 rounded-full shadow-xl p-4">
           <img class="rounded-full" src="/img/content/doelgroep_2.jpg" alt="Picture from Freepik.com">
@@ -86,9 +86,9 @@ definePageMeta({
             van exacte wetenschappen tot talen en mens- en maatschappijvakken. Onze examentrainingen zijn speciaal
             ontworpen om hen voor te bereiden op belangrijke toetsen en examens.
           </p>
-          <button class="bg-royalBlue text-white font-semibold px-6 py-3 rounded-xl shadow hover:bg-vibrantOrange transition">
-            Bekijk onze doelgroepen
-          </button>
+          <NuxtLink to="/producten-en-diensten" class="bg-royalBlue text-white font-semibold px-6 py-3 rounded-xl shadow hover:bg-vibrantOrange transition">
+            Producten en diensten
+          </NuxtLink>
         </div>
         <div class="order-2 md:order-1 bg-white opacity-90 rounded-full shadow-xl p-4">
           <img class="rounded-full" src="/img/content/doelgroep_3.jpg" alt="Picture from Freepik.com">
@@ -107,9 +107,9 @@ definePageMeta({
             BothWays Education een partner die niet alleen de academische prestaties van hun kinderen verbetert, maar
             ook hun zelfvertrouwen en persoonlijke vaardigheden versterkt.
           </p>
-          <button class="bg-royalBlue text-white font-semibold px-6 py-3 rounded-xl shadow hover:bg-vibrantOrange transition">
-            Bekijk onze doelgroepen
-          </button>
+          <NuxtLink to="/producten-en-diensten" class="bg-royalBlue text-white font-semibold px-6 py-3 rounded-xl shadow hover:bg-vibrantOrange transition">
+            Producten en diensten
+          </NuxtLink>
         </div>
         <div class="bg-white opacity-90 rounded-full shadow-xl p-4">
           <img class="rounded-full" src="/img/content/doelgroep_1.jpg" alt="Picture from Freepik.com">
@@ -128,9 +128,9 @@ definePageMeta({
             leeruitdagingen zoals dyslexie, ADHD en andere leerstoornissen. Onze ervaren docenten passen hun
             benaderingen aan om tegemoet te komen aan de unieke behoeften van deze studenten.
           </p>
-          <button class="bg-royalBlue text-white font-semibold px-6 py-3 rounded-xl shadow hover:bg-vibrantOrange transition">
-            Bekijk onze doelgroepen
-          </button>
+          <NuxtLink to="/producten-en-diensten" class="bg-royalBlue text-white font-semibold px-6 py-3 rounded-xl shadow hover:bg-vibrantOrange transition">
+            Producten en diensten
+          </NuxtLink>
         </div>
         <div class="order-2 md:order-1 bg-white opacity-90 rounded-full shadow-xl p-4">
           <img class="rounded-full" src="/img/content/doelgroep_5.jpg" alt="Picture from Freepik.com">
@@ -149,9 +149,9 @@ definePageMeta({
             tot prestigieuze scholen en universiteiten kunnen profiteren van onze intensieve begeleidingsprogramma's en
             studievaardigheden workshops.
           </p>
-          <button class="bg-royalBlue text-white font-semibold px-6 py-3 rounded-xl shadow hover:bg-vibrantOrange transition">
-            Bekijk onze doelgroepen
-          </button>
+          <NuxtLink to="/producten-en-diensten" class="bg-royalBlue text-white font-semibold px-6 py-3 rounded-xl shadow hover:bg-vibrantOrange transition">
+            Producten en diensten
+          </NuxtLink>
         </div>
         <div class="bg-white opacity-90 rounded-full shadow-xl p-4">
           <img class="rounded-full" src="/img/content/doelgroep_4.jpg" alt="Picture from Freepik.com">
