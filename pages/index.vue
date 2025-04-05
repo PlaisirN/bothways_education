@@ -1,36 +1,75 @@
 <template>
-  <div class="min-h-screen relative z-2">
-    <section class="min-h-screen bg-[url('/img/content/main_blue_2_bg_rotated_comp.jpg')] bg-cover bg-center bg-no-repeat p-8 mx-auto">
+  <div class="min-h-screen relative z-2 bg-white">
+    <section class="min-h-screen bg-lightBlue p-8 mx-auto">
       <!-- Hero Section -->
-      <div class="h-screen md:flex justify-around items-center">
-        <div class="md:w-2/5">
-          <h1 class="text-6xl font-bold text-gray-900 mb-4 leading-tight">
-            Welkom bij <br />
-            <span class="text-blue-600">BothWays Education!</span>
-          </h1>
-          <p class="text-lg text-gray-700 max-w-2xl mb-6">
-            Bij BothWays Education geloven wij dat de sleutel tot een succesvolle schoolcarrière ligt in een combinatie van
-            academische prestaties en persoonlijke groei.
-          </p>
-          <NuxtLink to="#" class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700">
-            Ontdek Hoe
-          </NuxtLink>
-        </div>
-        <div>
-          <img src="/img/content/stack_of_books.jpg" alt="Education" class="w-full max-w-lg rounded-br-lg rounded-bl-lg rounded-t-full shadow-lg" />
+<!--      <div class="min-h-screen md:flex py-20 justify-center md:justify-around items-center">-->
+<!--        <div class="md:w-2/5 mb-20 mt-20 md:mt-0 md:mb-0">-->
+<!--          <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-4 leading-tight">-->
+<!--            Welkom bij <br />-->
+<!--            <span class="text-blue-600">BothWays Education!</span>-->
+<!--          </h1>-->
+<!--          <p class="text-lg text-gray-700 max-w-2xl mb-6">-->
+<!--            Bij BothWays Education geloven wij dat de sleutel tot een succesvolle schoolcarrière ligt in een combinatie van-->
+<!--            academische prestaties en persoonlijke groei.-->
+<!--          </p>-->
+<!--          <NuxtLink to="#" class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700">-->
+<!--            Ontdek Hoe-->
+<!--          </NuxtLink>-->
+<!--        </div>-->
+<!--        <div class="w-full md:w-2/5">-->
+<!--          <div class="w-80 h-80 md:w-2/5 md:h-auto mx-auto">-->
+<!--            <img-->
+<!--                src="/img/content/stack_of_books.jpg"-->
+<!--                alt="Education"-->
+<!--                class="w-full h-full mx-auto max-w-lg rounded-full md:rounded-br-lg md:rounded-bl-lg md:rounded-t-full shadow-xl"-->
+<!--            />-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+      <div class="pt-44 pb-14 md:pt-10 md:pb-10 md:flex justify-center items-center">
+        <div class="md:w-4/5 md:flex justify-between items-center gap-10 md:my-32">
+          <div class="md:w-1/2 mb-14 md:mb-0">
+            <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-4 leading-tight text-center md:text-start">
+              Welkom bij <br />
+              <span class="text-blue-600">BothWays Education!</span>
+            </h1>
+            <p class="text-lg text-gray-700 max-w-2xl mb-6 text-center md:text-start">
+              Bij BothWays Education geloven wij dat de sleutel tot een succesvolle schoolcarrière ligt in een combinatie van
+              academische prestaties en persoonlijke groei.
+            </p>
+            <div class="">
+              <NuxtLink to="#two-roads-section" class="w-3/4 mx-auto md:mx-0 md:w-1/2 flex justify-center align-center items-center gap-2 px-6 py-3 text-blue-600 font-semibold rounded-lg shadow bg-gray-200 cursor-pointer">
+                <span>
+                  Ontdek hoe
+                </span>
+                <span class="self-end">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 animate-bounce">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+                  </svg>
+              </span>
+              </NuxtLink>
+            </div>
+          </div>
+          <div class="md:w-1/2">
+            <img class="md:w-5/6 rounded-full mx-auto" src="/img/content/doelgroep_5.jpg" alt="Image from Freepik.com">
+          </div>
         </div>
       </div>
-      <div>
-        <h1 class="text-center text-6xl">
+      <div id="two-roads-section" class="mt-20 mb-36">
+        <h1 class="text-center text-3xl md:text-6xl">
           Twee Wegen naar Succes:
           <br>
           <span class="text-blue-500">Academisch en Persoonlijk</span>
         </h1>
       </div>
       <!-- About Section -->
-      <div class="md:flex justify-center items-center my-50 p-8">
-        <div class="md:w-1/2">
-          <img src="/img/content/writing-hand.jpg" alt="Individuele begeleiding" class="w-[85%] rounded-tl-[50%] rounded-tr-[10%] rounded-br-[50%] rounded-bl-[10%] shadow-lg" />
+      <div class="md:flex justify-center items-center my-50 md:p-8">
+        <div class="md:w-1/2 mb-10 md:mb-0">
+          <img
+              src="/img/content/writing-hand.jpg"
+              alt="Individuele begeleiding"
+              class="w-full md:w-[85%] rounded-tl-[50%] rounded-tr-[10%] rounded-br-[50%] rounded-bl-[10%] shadow-lg"
+          />
         </div>
         <div class="md:w-2/5 bg-white rounded-xl p-8 shadow-lg">
           <h2 class="text-2xl font-semibold text-gray-900 mb-4">Individuele Begeleiding</h2>
@@ -46,10 +85,10 @@
           </p>
         </div>
       </div>
-      <div class="my-15">
-        <h1 class="text-center text-6xl">Bekijk de impact!</h1>
+      <div class="my-40">
+        <h1 class="text-center text-5xl md:text-6xl">Bekijk de impact!</h1>
       </div>
-      <div class="p-8 w-9/10 mx-auto my-50">
+      <div class="md:p-8 w-full md:w-9/10 mx-auto my-32">
         <Carousel :items="slides" />
       </div>
       <!-- Call to Action -->

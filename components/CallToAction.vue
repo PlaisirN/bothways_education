@@ -28,9 +28,9 @@ defineProps({
 </script>
 
 <template>
-  <div class="flex flex-col items-center text-center p-16">
-    <h2 class="text-2xl font-semibold mb-4">{{ title }}</h2>
-    <p class="max-w-2xl mb-4">
+  <div class="flex flex-col items-center text-center py-20 md:px-16 md:py-16">
+    <h2 class="text-3xl md:text-2xl font-semibold mb-4">{{ title }}</h2>
+    <p class="text-xl max-w-full md:max-w-2xl mb-4">
       {{ description }}
     </p>
     <NuxtLink

@@ -18,26 +18,14 @@
 
       <!-- Navigation Links -->
       <div
+          ref="dropdownRef"
           :class="{'hidden': !isOpen, 'block': isOpen}"
-          class="absolute lg:static top-16 left-0 w-full lg:w-auto lg:flex lg:items-center lg:space-x-6 p-4 lg:p-0 shadow-lg lg:shadow-none"
+          class="absolute lg:static top-16 left-0 w-full lg:w-auto lg:flex lg:items-center lg:space-x-6 p-4 lg:p-0 shadow-lg bg-[#F4F2F2] lg:shadow-none"
       >
         <NuxtLink to="/over-ons" class="block lg:inline-block text-gray-700 hover:text-gray-900 px-4 py-2">Over Ons</NuxtLink>
-
-        <!-- Dropdown Menu -->
-        <div class="relative group">
-          <button @click="dropdownOpen = !dropdownOpen" class="block lg:inline-block text-gray-700 hover:text-gray-900 focus:outline-none px-4 py-2 cursor-pointer">
-            Producten & Diensten
-          </button>
-          <div
-              :class="{'hidden': !dropdownOpen, 'block': dropdownOpen}"
-              class="lg:absolute lg:right-0 mt-2 w-56 bg-white border border-gray-200 rounded-md shadow-lg"
-          >
-            <NuxtLink to="/producten-diensten" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Producten en Diensten</NuxtLink>
-            <NuxtLink to="/marktpositie-doelgroep" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Marktpositie en Doelgroep</NuxtLink>
-            <NuxtLink to="/toekomstige-doelen-plannen" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Toekomstige doelen en plannen</NuxtLink>
-          </div>
-        </div>
-
+        <NuxtLink to="/producten-en-diensten" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Producten en Diensten</NuxtLink>
+        <NuxtLink to="/marktpositie-en-doelgroep" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Marktpositie en Doelgroep</NuxtLink>
+        <NuxtLink to="/toekomstige-doelen-en-plannen" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Toekomstige doelen en plannen</NuxtLink>
         <NuxtLink to="/contact" class="block lg:inline-block text-gray-700 hover:text-gray-900 px-4 py-2">Contact</NuxtLink>
       </div>
     </nav>
@@ -45,11 +33,15 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue';
+import { ref, onMounted, onUnmounted, watch } from 'vue';
+import { useRouter } from 'vue-router';
 
 const isOpen = ref(false);
+const dropdownRef = ref(null);
 const dropdownOpen = ref(false);
 const hideNavbar = ref(false);
+const isLargeScreen = ref(false);
+const router = useRouter();
 let lastScrollY = 0;
 let timeout = null;
 
@@ -57,32 +49,59 @@ const handleScroll = () => {
   const currentScrollY = window.scrollY;
 
   if (currentScrollY > lastScrollY && currentScrollY > 50) {
-    // Scrolling down → hide navbar immediately
     hideNavbar.value = true;
     clearTimeout(timeout);
   } else {
-    // Scrolling up → delay before showing navbar
     clearTimeout(timeout);
     timeout = setTimeout(() => {
       hideNavbar.value = false;
-    }, 20); // 200ms delay
+    }, 20);
   }
 
   lastScrollY = currentScrollY;
 };
 
+const handleResize = () => {
+  isLargeScreen.value = window.innerWidth >= 1024;
+};
+
+const handleClickOutside = (event) => {
+  if (
+      isOpen.value &&
+      dropdownRef.value &&
+      !dropdownRef.value.contains(event.target) &&
+      !event.target.closest('button')
+  ) {
+    isOpen.value = false;
+  }
+};
+
+const handleMouseLeave = () => {
+  setTimeout(() => {
+    dropdownOpen.value = false;
+  }, 200);
+};
+
 onMounted(() => {
   window.addEventListener('scroll', handleScroll);
+  window.addEventListener('resize', handleResize);
+  router.afterEach(() => {
+    isOpen.value = false;
+  });
+
+  document.addEventListener('click', handleClickOutside);
 });
 
 onUnmounted(() => {
+  isLargeScreen.value = window.innerWidth >= 1024; // Now runs only on client-side
   window.removeEventListener('scroll', handleScroll);
+  window.removeEventListener('resize', handleResize);
+  document.removeEventListener('click', handleClickOutside);
   clearTimeout(timeout);
 });
 </script>
 
 <style scoped>
-/* Smooth hide animation */
 .-top-full {
   top: -100px;
   opacity: 0;

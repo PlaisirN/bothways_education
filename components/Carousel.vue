@@ -23,11 +23,17 @@ const scrollNext = () => emblaApi.value?.scrollNext()
 <template>
   <div class="embla overflow-hidden mx-auto" ref="emblaRef">
     <div class="embla__container flex">
-      <div v-for="(item, index) in items" :key="index" class="embla__slide flex-none md:w-2/5 bg-white rounded-[15%] p-8 mx-5 shadow-lg">
-        <img :src="`/img/content/${item.image}`" :alt="item.title" class="w-20 h-20 md:w-32 md:h-32 rounded-full mb-10" />
-        <h2 class="text-2xl font-semibold text-gray-900 mb-4">{{ item.title}}</h2>
-        <p class="text-gray-700">{{ item.description}}</p>
-        <Stars class="mt-5" :count="5"/>
+      <div v-for="(item, index) in items" :key="index"
+           class="embla__slide flex-none w-[90%] md:w-2/5 bg-white rounded-xl md:rounded-[15%] p-8 mx-5 shadow-lg"
+      >
+        <img
+            :src="`/img/content/${item.image}`"
+            :alt="item.title"
+            class="w-32 h-32 md:w-32 md:h-32 rounded-full mb-10 mx-auto"
+        />
+        <h2 class="text-2xl font-semibold text-gray-900 mb-4 text-center md:text-start">{{ item.title}}</h2>
+        <p class="text-gray-700 text-center md:text-start">{{ item.description}}</p>
+        <Stars class="mt-5 flex justify-center" :count="5"/>
       </div>
     </div>
   </div>
