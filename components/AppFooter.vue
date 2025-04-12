@@ -29,7 +29,7 @@
               [Telefoonnummer]
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="mailto:info@bothwayseducation.com" class="no-underline hover:underline text-gray-800 hover:text-blue-400">
+              <a href="mailto:info@bothwayseducation.com" class="no-underline hover:underline cursor-pointer text-gray-800 hover:text-blue-400">
                 info@bothwayseducation.com
               </a>
             </li>
