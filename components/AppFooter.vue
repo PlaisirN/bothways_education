@@ -12,13 +12,13 @@
           <p class="uppercase text-gray-500 md:mb-6">BothWays Education</p>
           <ul class="list-reset mb-6">
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              [Adresstraat en nummer]
+              Van Oestendestraat 30
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              [Postcode en stad]
+              3083 ME Rotterdam
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              [Land]
+              Nederland
             </li>
           </ul>
         </div>
@@ -39,7 +39,7 @@
           <p class="uppercase text-gray-500 md:mb-6">Openingstijden</p>
           <ul class="list-reset mb-6">
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              maa-vrij: 17:00 - 21:00 uur
+              Maa - Vrij: 17:00 - 21:00 uur
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               Zaterdag: gesloten
